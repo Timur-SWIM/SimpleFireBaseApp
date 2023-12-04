@@ -34,26 +34,42 @@ class LoginViewController: UIViewController {
     }()
     
     private let buttonLogin: UIButton = {
-        let button = UIButton()
+        let button = UIButton(type: .system)
         
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Login", for: .normal)
         button.setTitleColor(.blue, for: .normal)
         button.layer.borderWidth = 2.0
+        button.addTarget(self, action: #selector(didTapButtonLogin), for: .touchUpInside)
         
         return button
     }()
     
     private let buttonCreateAccount: UIButton = {
-        let button = UIButton()
+        let button = UIButton(type: .system)
         
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("CreateAccount", for: .normal)
         button.setTitleColor(.blue, for: .normal)
         button.layer.borderWidth = 2.0
+        button.addTarget(self, action: #selector(didTapButtonCreate), for: .touchUpInside)
         
         return button
     }()
+    
+    @objc
+    private func didTapButtonCreate() {
+        let createAccountViewController = CreateAccountViewController()
+        present(createAccountViewController, animated: true)
+    }
+    
+    @objc
+    private func didTapButtonLogin() {
+        let jokeFeedViewController = JokeFeedViewController()
+        navigationController?.pushViewController(jokeFeedViewController, animated: true)
+        
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,7 +87,7 @@ class LoginViewController: UIViewController {
         createButtonLoginConstraint()
         createCreateAccountConstraint()
     }
-    
+
     func createlabelJokesLoginConstraint() {
         labelJokesLogin.topAnchor.constraint(equalTo: view.topAnchor, constant: 65).isActive = true
         labelJokesLogin.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -92,13 +108,13 @@ class LoginViewController: UIViewController {
     func createButtonLoginConstraint() {
         buttonLogin.topAnchor.constraint(equalTo: textFieldPassword.bottomAnchor, constant: 15).isActive = true
         buttonLogin.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        buttonLogin.widthAnchor.constraint(equalToConstant: 55).isActive = true
+        buttonLogin.widthAnchor.constraint(equalToConstant: 150).isActive = true
     }
     
     func createCreateAccountConstraint(){
         buttonCreateAccount.topAnchor.constraint(equalTo: buttonLogin.bottomAnchor, constant: 15).isActive = true
         buttonCreateAccount.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        buttonCreateAccount.widthAnchor.constraint(equalTo: buttonLogin.widthAnchor, multiplier: 3).isActive = true
+        buttonCreateAccount.widthAnchor.constraint(equalToConstant: 150).isActive = true
     }
 }
 

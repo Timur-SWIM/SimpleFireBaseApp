@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043694282B0D7671008E709A /* JokeFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043694272B0D7671008E709A /* JokeFeedViewController.swift */; };
+		0436942A2B0D7B67008E709A /* JokeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043694292B0D7B67008E709A /* JokeTableViewCell.swift */; };
+		046F206A2B0BEC2E0002DC7D /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F20692B0BEC2E0002DC7D /* CreateAccountViewController.swift */; };
 		048401042B078A0E00148B84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048401032B078A0E00148B84 /* AppDelegate.swift */; };
 		048401062B078A0E00148B84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048401052B078A0E00148B84 /* SceneDelegate.swift */; };
 		048401082B078A0E00148B84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048401072B078A0E00148B84 /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		043694272B0D7671008E709A /* JokeFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeFeedViewController.swift; sourceTree = "<group>"; };
+		043694292B0D7B67008E709A /* JokeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeTableViewCell.swift; sourceTree = "<group>"; };
+		046F20692B0BEC2E0002DC7D /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		048401002B078A0E00148B84 /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		048401032B078A0E00148B84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		048401052B078A0E00148B84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +72,9 @@
 				0484010C2B078A1000148B84 /* Assets.xcassets */,
 				0484010E2B078A1000148B84 /* LaunchScreen.storyboard */,
 				048401112B078A1000148B84 /* Info.plist */,
+				046F20692B0BEC2E0002DC7D /* CreateAccountViewController.swift */,
+				043694272B0D7671008E709A /* JokeFeedViewController.swift */,
+				043694292B0D7B67008E709A /* JokeTableViewCell.swift */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -141,10 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046F206A2B0BEC2E0002DC7D /* CreateAccountViewController.swift in Sources */,
+				043694282B0D7671008E709A /* JokeFeedViewController.swift in Sources */,
 				0484011B2B078BBC00148B84 /* LoginViewController.swift in Sources */,
 				048401082B078A0E00148B84 /* ViewController.swift in Sources */,
 				048401042B078A0E00148B84 /* AppDelegate.swift in Sources */,
 				048401062B078A0E00148B84 /* SceneDelegate.swift in Sources */,
+				0436942A2B0D7B67008E709A /* JokeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

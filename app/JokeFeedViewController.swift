@@ -37,13 +37,27 @@ extension JokeFeedViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "JokeTableViewCell", for: indexPath)
+        let mainCell = cell as? JokeTableViewCell
+        
+        mainCell?.configure(title: "Joke \(indexPath.row)")
+        
+//        var contentConfiguration = cell.defaultContentConfiguration()
+//
+//        contentConfiguration.text = "Joke \(indexPath.row)"
+//        contentConfiguration.secondaryText = "Author \(indexPath.row)"
+//        contentConfiguration.image = UIImage(systemName: "hand.thumbsup.fill")
+//
+//        cell.contentConfiguration = contentConfiguration
         return cell
     }
 }
 
 extension JokeFeedViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        72
+    }
 }

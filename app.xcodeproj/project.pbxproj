@@ -17,6 +17,7 @@
 		0484010D2B078A1000148B84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0484010C2B078A1000148B84 /* Assets.xcassets */; };
 		048401102B078A1000148B84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0484010E2B078A1000148B84 /* LaunchScreen.storyboard */; };
 		0484011B2B078BBC00148B84 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484011A2B078BBC00148B84 /* LoginViewController.swift */; };
+		04DBE0952B1F3F31004EB6D1 /* addJokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBE0942B1F3F31004EB6D1 /* addJokeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		0484010F2B078A1000148B84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		048401112B078A1000148B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0484011A2B078BBC00148B84 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		04DBE0942B1F3F31004EB6D1 /* addJokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addJokeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041092C92B1F26F4004AAE6A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				048401072B078A0E00148B84 /* ViewController.swift */,
+				043694272B0D7671008E709A /* JokeFeedViewController.swift */,
+				046F20692B0BEC2E0002DC7D /* CreateAccountViewController.swift */,
+				0484011A2B078BBC00148B84 /* LoginViewController.swift */,
+				04DBE0942B1F3F31004EB6D1 /* addJokeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		041092CA2B1F2707004AAE6A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				043694292B0D7B67008E709A /* JokeTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		041092CB2B1F272D004AAE6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		041092CE2B1F2BB2004AAE6A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				048401092B078A0E00148B84 /* Main.storyboard */,
+				0484010C2B078A1000148B84 /* Assets.xcassets */,
+				0484010E2B078A1000148B84 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		048400F72B078A0E00148B84 = {
 			isa = PBXGroup;
 			children = (
@@ -64,17 +103,13 @@
 		048401022B078A0E00148B84 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				041092CE2B1F2BB2004AAE6A /* Resources */,
+				041092CB2B1F272D004AAE6A /* Model */,
+				041092CA2B1F2707004AAE6A /* View */,
+				041092C92B1F26F4004AAE6A /* Controller */,
 				048401032B078A0E00148B84 /* AppDelegate.swift */,
 				048401052B078A0E00148B84 /* SceneDelegate.swift */,
-				0484011A2B078BBC00148B84 /* LoginViewController.swift */,
-				048401072B078A0E00148B84 /* ViewController.swift */,
-				048401092B078A0E00148B84 /* Main.storyboard */,
-				0484010C2B078A1000148B84 /* Assets.xcassets */,
-				0484010E2B078A1000148B84 /* LaunchScreen.storyboard */,
 				048401112B078A1000148B84 /* Info.plist */,
-				046F20692B0BEC2E0002DC7D /* CreateAccountViewController.swift */,
-				043694272B0D7671008E709A /* JokeFeedViewController.swift */,
-				043694292B0D7B67008E709A /* JokeTableViewCell.swift */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -157,6 +192,7 @@
 				048401042B078A0E00148B84 /* AppDelegate.swift in Sources */,
 				048401062B078A0E00148B84 /* SceneDelegate.swift in Sources */,
 				0436942A2B0D7B67008E709A /* JokeTableViewCell.swift in Sources */,
+				04DBE0952B1F3F31004EB6D1 /* addJokeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

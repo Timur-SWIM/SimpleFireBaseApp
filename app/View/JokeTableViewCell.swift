@@ -18,6 +18,7 @@ final class JokeTableViewCell: UITableViewCell {
     
     private let jokeTextLabel: UILabel = {
         let label = UILabel()
+        label.textColor = .systemBlue
         
         return label
     }()

@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "JokesLogin"
-        label.textColor = .blue
+        label.textColor = .systemBlue
         return label
     }()
     
@@ -38,7 +38,7 @@ class LoginViewController: UIViewController {
         
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Login", for: .normal)
-        button.setTitleColor(.blue, for: .normal)
+        button.setTitleColor(.systemBlue, for: .normal)
         button.layer.borderWidth = 2.0
         button.addTarget(self, action: #selector(didTapButtonLogin), for: .touchUpInside)
         
@@ -50,7 +50,7 @@ class LoginViewController: UIViewController {
         
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("CreateAccount", for: .normal)
-        button.setTitleColor(.blue, for: .normal)
+        button.setTitleColor(.systemBlue, for: .normal)
         button.layer.borderWidth = 2.0
         button.addTarget(self, action: #selector(didTapButtonCreate), for: .touchUpInside)
         
@@ -67,9 +67,7 @@ class LoginViewController: UIViewController {
     private func didTapButtonLogin() {
         let jokeFeedViewController = JokeFeedViewController()
         navigationController?.pushViewController(jokeFeedViewController, animated: true)
-        
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

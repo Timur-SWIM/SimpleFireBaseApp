@@ -28,7 +28,13 @@ class JokeFeedViewController: UIViewController {
         tableView.delegate = self
         
         tableView.register(JokeTableViewCell.self, forCellReuseIdentifier: "JokeTableViewCell")
-        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAddButton))
+    }
+    
+    @objc
+    private func didTapAddButton() {
+        let addJokeViewController = addJokeViewController()
+        navigationController?.pushViewController(addJokeViewController, animated: true)
     }
    
 }
